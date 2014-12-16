@@ -1,8 +1,8 @@
 package com.user.library;
 
 public class User {
-	private int ID;
-	private String name;
+	protected int ID;
+	protected String name;
 	
 	public User() {
 		ID = -1;
@@ -11,6 +11,22 @@ public class User {
 	
 	public User(int id, String n) {
 		ID = id;
+		name = n;
+	}
+	
+	public int getID() {
+		return ID;
+	}
+	
+	public void setID(int id) {
+		ID = id;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String n) {
 		name = n;
 	}
 }
